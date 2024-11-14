@@ -1,1 +1,20 @@
-
+"""
+Auther:Febin Noble
+Python program for a calculator
+Version:1.0
+"""
+num1=int(input("Enter number1 :"))
+num2=int(input("Enter number2 :"))
+operation=input("Enter your operation '+','-','*','/' :")
+if operation=='+':
+    sum=num1+num2
+    print(f"Your sum is {sum}")
+elif operation=='-':
+    difference=num1-num2
+    print(f"The difference is {difference}")
+elif operation=='*':
+    product=num1*num2
+    print(f"The product is {product}")
+else:
+    quotient=num1/num2
+    print(f"The quotient is {quotient}")
