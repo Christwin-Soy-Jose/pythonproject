@@ -1,2 +1,0 @@
-While True:
-    com=int(input("enter the number for the required calculation"))
