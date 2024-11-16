@@ -1,1 +1,90 @@
-
+while True:
+     val=int(input('''enter\n  1 for arithmetic calculation \n  2 for trignometric calculation
+  3 to calculate area of desired shapes\n  4 to calculate BMI\n  5 to find hypotennuse:'''))
+     if val==1:
+       num1=int(input("Enter number 1 :"))
+       num2=int(input("Enter number 2 :"))
+       operation=input("Enter your operation '+','-','*','/' :")
+       if operation=='+':
+           sum=num1+num2
+           print(f"Your sum is {sum}")
+       elif operation=='-':
+            difference=num1-num2
+            print(f"The difference is {difference}")
+       elif operation=='*':
+            product=num1*num2
+            print(f"The product is {product}")
+       else:
+             quotient=num1/num2
+             print(f"The quotient is {quotient}")
+     if val==2:
+          import math
+          val2=int(input("enter\n 1 for sine 2 for cosine \n3 for tangent 4 for cosecant\n 5 for secant 6 for cotangent "))
+          value=int(input("enter the value"))
+          if val2==1:
+               print("sine ",math.sin(value))
+          if val2==2:
+               print("cosine ",math.cos(value))
+          if val2==3:
+               print("tangent ",math.tan(value))
+          if val2==4:
+               print("cosecant ",1/math.sin(value))
+          if val2==5:
+               print("secant ",1/math.cos(value))
+          if val2==6:
+               print("cotangent ",1/math.tan(value))
+     if val==3:
+          import math
+          print("c=circle\nt=triangle\ns=square\nr=rectangle\np=parallelogram\nz=trapezoid")
+          shape=input("Enter the shape code  : ")
+          if shape=="c":
+               r=float(input("Enter the radius of the circle (cm): "))
+               area=math.pi*(r**2)
+               print("Area of the circle is ",area,"cm")
+          elif shape=="t":
+               b=float(input("Enter the base of the triangle(cm) : "))
+               h=float(input("Enter the height of the triangle(cm) : "))
+               area=(1/2)*b*h
+               print("Area of the triangle is ",area,"cm")
+          elif shape=="s":
+               side=float(input("Enter the side of the square(cm): "))
+               area=side**2
+               print("Area of the square is",area,"cm")
+          elif shape=="r":
+               l=float(input("Enter the length of the rectangle (cm): "))
+               b=float(input("Enter the width of the rectangle (cm): "))
+               area=l*b
+               print("Area of the rectangle is ",area,"cm")
+          elif shape=="p":
+               b=float(input("Enter the base of the parallelogram(cm) : "))
+               h=float(input("Enter the height of the parallelogram (cm): "))
+               area =b*h
+               print("Area of the parallelogram is ",area,"cm")
+          elif shape=="z":
+               a=float(input("Enter the short base of the trapezoid (cm): "))
+               b=float(input("Enter the long base of the trapezoid(cm) : "))
+               h=float(input("Enter the height of the trapezoid(cm) : "))
+               area=(1/2)*(a+b)*h
+               print("Area of the trapezoid is",area,"cm")
+          else:
+               print("invalid shape")
+                    
+     if val==4:
+          weight=float(input("Enter your weight in kilograms:"))
+          height=float(input("Enter your height in meters:"))
+          BMI=weight/(height**2)
+          print("Your BMI is:",BMI)
+          if BMI<18.5:
+            print("You are underweight")
+          elif BMI>=18.5:
+            print("You have a normal weight")
+          elif BMI>25:
+            print("You are overweight")
+          else:
+             print("You have obesity")
+     if val==5:
+          import math
+          base=int(input("Enter the base:"))
+          altitude=int(input("Enter the altitude:"))
+          hypotenuse=math.sqrt(base*base + altitude*altitude)
+          print(f"The hypotenuse of the given right angled triangle is: {hypotenuse}")
