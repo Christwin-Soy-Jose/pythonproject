@@ -1,5 +1,5 @@
 '''Author:Divya Kuriakose
-Date:16-11-2024
+Date:17-12-2024
 program to check whether the number is odd or even
 '''
 num=int(input("Enter a number:"))
