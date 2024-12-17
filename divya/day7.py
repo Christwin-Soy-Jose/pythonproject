@@ -1,6 +1,6 @@
 '''
 Author:Divya Kuriakose
-Date:29-10-2024
+Date:17-12-2024
 program to check whether the given number is prime or not
 '''
 
